@@ -1,0 +1,19 @@
+Problem Statement
+Airline ticket prices are notoriously volatile, fluctuating based on time to departure, route, airline, and demand. Travelers lack a reliable tool for knowing when to buy. This project builds a regression model to predict ticket prices from flight and timing features.
+
+Dataset Source
+Flight and ticket pricing dataset (included in the repository). Features include departure/arrival airports, airline carrier, days in advance of departure, cabin class, and historical price records.
+
+Approach
+Exploratory data analysis of price distributions across routes, airlines, and booking windows.
+Feature engineering: derived features such as days-to-departure buckets, route popularity, and seasonal indicators.
+Regression models including linear regression, random forest, and gradient boosting.
+Hyperparameter tuning and cross-validation for model selection.
+Evaluation using RMSE and R² on a held-out test set.
+
+Key Findings
+
+Booking window (days before departure) is one of the most influential features — prices spike sharply in the final 7–14 days.
+Route and airline carrier together explain a large share of baseline price variance.
+Tree-based ensemble models outperformed linear regression substantially on this dataset.
+Economy class prices are far more volatile than business/first class prices relative to route average.
